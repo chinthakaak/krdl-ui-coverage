@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+  sonarqube:
+    image: sonarqube:latest
+    container_name: sonarqube
+    ports:
+      - 9000:9000
+      - 9092:9092
+#    volumes:
+#      - sonardata:/opt/sonarqube/data/sonar.h2.db22000
+#volumes:
+#  sonardata:
